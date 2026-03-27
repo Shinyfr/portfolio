@@ -9,8 +9,6 @@ Bienvenue sur mon portfolio ✨
 - ⚡ Vite
 - 🎨 CSS (animations + design pastel)
 
----
-
 ## 💻 Installation
 
 ```bash
