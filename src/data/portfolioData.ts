@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
     title: "Tutrice",
     subtitle: "Accompagnement et transmission",
     description:
-      "Je suis également tutrice. J’aide, j’accompagne et je transmets des bonnes pratiques aux nouveaux modérateurs 🍃"
+      "Je suis également tutrice. J’aide, j’accompagne et je transmets des bonnes pratiques aux nouveaux modérateurs 🌷"
   }
 ];
 
