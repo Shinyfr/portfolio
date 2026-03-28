@@ -22,12 +22,21 @@ body,
 }
 
 body {
-  color: #24303f;
+  color: var(--text);
   background:
     radial-gradient(circle at 10% 20%, rgba(255, 196, 220, 0.55), transparent 25%),
     radial-gradient(circle at 90% 15%, rgba(182, 245, 207, 0.55), transparent 25%),
     radial-gradient(circle at 30% 90%, rgba(255, 255, 255, 0.9), transparent 25%),
-    linear-gradient(135deg, #ffe6ef 0%, #ffffff 50%, #e8fff1 100%);
+    linear-gradient(135deg, var(--rose-1) 0%, #ffffff 50%, var(--green-1) 100%);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(243, 167, 196, 0.12), transparent 25%),
+    radial-gradient(circle at 90% 15%, rgba(154, 216, 176, 0.12), transparent 25%),
+    radial-gradient(circle at 30% 90%, rgba(255, 255, 255, 0.03), transparent 25%),
+    linear-gradient(135deg, #1b161d 0%, #201c22 45%, #18211d 100%);
 }
 
 a {

@@ -13,6 +13,100 @@
   --radius-lg: 24px;
 }
 
+[data-theme="dark"] {
+  --rose-1: #2b1f28;
+  --rose-2: #4a2d3d;
+  --rose-3: #f3a7c4;
+
+  --green-1: #1d2a24;
+  --green-2: #294236;
+  --green-3: #9ad8b0;
+
+  --white-soft: rgba(22, 24, 28, 0.78);
+
+  --text: #f4f1f6;
+  --text-soft: #b8b2bf;
+
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(28, 30, 35, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+[data-theme="dark"] .nav-links a {
+  color: var(--text-soft);
+}
+
+[data-theme="dark"] .nav-links a:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .theme-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+[data-theme="dark"] .username-tag {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+[data-theme="dark"] .froggy-box {
+  background: linear-gradient(
+    135deg,
+    rgba(243, 167, 196, 0.08),
+    rgba(154, 216, 176, 0.08)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+[data-theme="dark"] .btn-primary {
+  background: linear-gradient(
+    135deg,
+    rgba(243, 167, 196, 0.22),
+    rgba(243, 167, 196, 0.12)
+  );
+  border: 1px solid rgba(243, 167, 196, 0.22);
+  box-shadow: 0 10px 24px rgba(243, 167, 196, 0.12);
+  color: var(--text);
+}
+
+[data-theme="dark"] .btn-secondary {
+  background: linear-gradient(
+    135deg,
+    rgba(154, 216, 176, 0.22),
+    rgba(154, 216, 176, 0.12)
+  );
+  border: 1px solid rgba(154, 216, 176, 0.22);
+  box-shadow: 0 10px 24px rgba(154, 216, 176, 0.12);
+  color: var(--text);
+}
+
+[data-theme="dark"] .card-badge {
+  background: linear-gradient(
+    135deg,
+    rgba(243, 167, 196, 0.12),
+    rgba(154, 216, 176, 0.12)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: var(--text-soft);
+
+  backdrop-filter: blur(6px);
+}
+
 .page {
   position: relative;
   min-height: 100vh;
@@ -60,6 +154,10 @@
   pointer-events: none;
 }
 
+.mobile-theme-toggle {
+  display: none;
+}
+
 .orb-1 {
   top: 60px;
   left: 40px;
@@ -100,13 +198,50 @@
   justify-content: space-between;
   gap: 16px;
 
-  padding: 16px 20px;
+  padding: 14px 18px;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
   border-radius: 999px;
   box-shadow: var(--shadow);
-  animation: fadeNavbar 0.5s ease;
+}
+
+.brand {
+  color: var(--text);
+}
+
+.nav-links a {
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: var(--text-soft);
+  transition: 0.25s ease;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.theme-toggle {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; 
+  cursor: pointer;
+  transition: 0.25s ease;
+  color: var(--text);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 @keyframes fadeNavbar {
@@ -247,8 +382,10 @@
   padding: 10px 16px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.75);
   box-shadow: 0 12px 24px rgba(36, 48, 63, 0.08);
   font-weight: 800;
+  color: var(--text);
 }
 
 .profile-top {
@@ -290,7 +427,8 @@
 .stat-card {
   padding: 16px 18px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: 0.25s ease;
 }
 
@@ -562,5 +700,19 @@
   .hero-buttons .btn,
   .community-card-footer .btn {
     width: 100%;
+  }
+
+  .mobile-theme-toggle {
+    display: flex;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1000;
+  }
+
+  .mobile-theme-toggle .theme-toggle {
+    width: 52px;
+    height: 52px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
   }
 }
