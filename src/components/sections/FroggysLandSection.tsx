@@ -7,19 +7,15 @@ function FroggysLandSection(): JSX.Element {
 
         <div className="froggy-box">
           <p>
-            J’ai aussi mon propre univers communautaire :
-            <strong> Froggy&apos;s Land</strong>. C’est un serveur communautaire
-            autour de mes emojis grenouilles avec une ambiance douce, fun et
-            conviviale.
+            J’ai aussi mon propre serveur communautaire : <strong> Froggy&apos;s Land</strong>
+          </p>
+          <p>
+            Ce serveur a été créé autour de mes emojis grenouilles avec une ambiance fun et chill 🐸
           </p>
 
           <p style={{ marginTop: "12px" }}>
-            Il existe aussi un site dédié au serveur :
-            <strong> froggyland.fr</strong>.
-          </p>
-
-          <p className="highlight-line">
-            Un espace créatif, chaleureux et plein de petites grenouilles.
+            Il existe aussi un site dédié :
+            <strong> froggyland.fr</strong>
           </p>
 
           <div className="hero-buttons" style={{ marginTop: "18px" }}>

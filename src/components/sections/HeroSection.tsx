@@ -7,11 +7,11 @@ function HeroSection(): JSX.Element {
       <div className="glass hero-left">
 
         <h1 className="hero-title">
-          Salut, moi c’est <span className="hero-title-word">Shiny.</span>
+          Salut, moi c’est <span className="hero-title-word">Shiny !</span>
         </h1>
 
         <p className="hero-text">
-          J'ai 21 ans, je fais des études en informatique et je suis très active sur discord.
+          J'ai 21 ans, je fais des études en informatique et je suis très active sur discord !
           Je suis une personne qui adore les grenouilles et manger des cookies 🍪
         </p>
 

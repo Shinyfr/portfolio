@@ -7,7 +7,6 @@ function CommunitiesSection(): JSX.Element {
     <section className="section" id="communities">
       <SectionHeading
         title="Communautés"
-        subtitle="Des espaces où j’interviens en modération et en gestion de communauté."
       />
 
       <div className="cards-grid cards-grid--equal">
