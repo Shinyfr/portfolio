@@ -21,11 +21,207 @@
 
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="page">
+      <div class="background-orb orb-1"></div>
+      <div class="background-orb orb-2"></div>
+      <div class="background-orb orb-3"></div>
+
+      <main class="container">
+        <nav class="navbar glass">
+          <a href="#" class="brand">
+            <div class="brand-badge brand-badge--image">
+              <img src="Shiny.png" alt="Shiny" />
+            </div>
+            <span>Shiny</span>
+          </a>
+
+          <div class="nav-links">
+            <a href="#experience">Expérience</a>
+            <a href="#communities">Communautés</a>
+            <a href="#froggys-land">Froggy's Land</a>
+          </div>
+
+          <button type="button" class="theme-toggle" data-theme-toggle></button>
+        </nav>
+
+        <div class="mobile-theme-toggle">
+          <button type="button" class="theme-toggle" data-theme-toggle></button>
+        </div>
+
+        <section class="hero">
+          <div class="glass hero-left">
+            <h1 class="hero-title">
+              Salut, moi c’est <span class="hero-title-word">Shiny !</span>
+            </h1>
+
+            <p class="hero-text">
+              J'ai 21 ans, je fais des études en informatique et je suis très active sur discord !
+              Je suis une personne qui adore les grenouilles et manger des cookies 🍪
+            </p>
+
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="#experience">Voir mon expérience</a>
+              <a class="btn btn-secondary" href="#communities">Voir les communautés</a>
+            </div>
+          </div>
+
+          <div class="glass hero-card">
+            <div class="username-tag">@Shinyfr</div>
+
+            <div class="profile-top">
+              <img
+                src="Shiny.png"
+                alt="Photo de profil de Shiny"
+                class="profile-image"
+              />
+
+              <div>
+                <h2 class="profile-name">Shiny</h2>
+              </div>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-card">
+                <p class="stat-label">Pseudo</p>
+                <p class="stat-value">Shiny</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-label">Username</p>
+                <p class="stat-value">Shinyfr</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-label">Spécialité</p>
+                <p class="stat-value">Modération</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-label">Serveur perso</p>
+                <p class="stat-value">Froggy's Land</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="experience">
+          <h2 class="section-title">Mon expérience</h2>
+
+          <div class="cards-grid">
+            <article class="glass info-card">
+              <div class="card-badge">Communautés de grande ampleur</div>
+              <h3 class="card-title">Modération Discord</h3>
+              <p class="card-text">
+                Je modère des serveurs de grande ampleur, mon rôle est d’aider à garder une ambiance saine et agréable pour les membres 🌼
+              </p>
+            </article>
+
+            <article class="glass info-card">
+              <div class="card-badge">Grands événements</div>
+              <h3 class="card-title">Modération de lives</h3>
+              <p class="card-text">
+                Lors de certains événements, je peux aussi intervenir sur les lives pour aider à garder le chat lisible et fluide 🌺
+              </p>
+            </article>
+
+            <article class="glass info-card">
+              <div class="card-badge">Accompagnement et transmission</div>
+              <h3 class="card-title">Tutrice</h3>
+              <p class="card-text">
+                Je suis également tutrice. J’aide, j’accompagne et je transmets des bonnes pratiques aux nouveaux modérateurs 🌷
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="communities">
+          <h2 class="section-title">Communautés</h2>
+
+          <div class="cards-grid cards-grid--equal">
+            <article class="glass info-card info-card--community">
+              <div>
+                <div class="card-badge">Modératrice & Tutrice</div>
+                <h3 class="card-title">Inoxtag</h3>
+                <p class="card-text">
+                  Je participe à la modération du serveur d’Inoxtag pour aider à maintenir une ambiance saine et agréable pour la communauté 🪻
+                </p>
+              </div>
+
+              <div class="community-card-footer">
+                <a class="btn btn-primary" href="https://discord.gg/inoxtag" target="_blank" rel="noreferrer">
+                  Rejoindre Inoxtag
+                </a>
+              </div>
+            </article>
+
+            <article class="glass info-card info-card--community">
+              <div>
+                <div class="card-badge">Modératrice & Tutrice</div>
+                <h3 class="card-title">Michou</h3>
+                <p class="card-text">
+                  J’interviens aussi sur le serveur de Michou, avec la même volonté de garder un espace respectueux et chill 🌻
+                </p>
+              </div>
+
+              <div class="community-card-footer">
+                <a class="btn btn-secondary" href="https://discord.gg/wZW5wDrcCM" target="_blank" rel="noreferrer">
+                  Rejoindre Michou
+                </a>
+              </div>
+            </article>
+
+            <article class="glass info-card info-card--community">
+              <div>
+                <div class="card-badge">Manager</div>
+                <h3 class="card-title">La Vallée</h3>
+                <p class="card-text">
+                  Sur la Vallée, je m'occupe de la gestion du serveur côté technique avec la gestion des bots et des permissions 🍃
+                </p>
+              </div>
+
+              <div class="community-card-footer">
+                <a class="btn btn-primary" href="https://discord.gg/dU976Tb4Y3" target="_blank" rel="noreferrer">
+                  Rejoindre La Vallée
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="froggys-land">
+          <div class="glass panel">
+            <p class="mini-label">Projet communautaire</p>
+            <h2 class="panel-title">Froggy's Land</h2>
+
+            <div class="froggy-box">
+              <p>
+                J’ai aussi mon propre serveur communautaire : <strong> Froggy's Land</strong>
+              </p>
+              <p>
+                Ce serveur a été créé autour de mes emojis grenouilles avec une ambiance fun et chill 🐸
+              </p>
+
+              <p class="froggy-site">
+                Il existe aussi un site dédié :
+                <strong> froggyland.fr</strong>
+              </p>
+
+              <div class="hero-buttons froggy-buttons">
+                <a class="btn btn-primary" href="https://discord.gg/froggy" target="_blank" rel="noreferrer">
+                  Rejoindre le serveur
+                </a>
+
+                <a class="btn btn-secondary" href="https://froggyland.fr" target="_blank" rel="noreferrer">
+                  Voir le site
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
